@@ -1,0 +1,202 @@
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #202124;
+}
+
+h1,
+h2,
+h3,
+input,
+button {
+  font-family: "Press Start 2P", system-ui;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #eff6ff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 5rem;
+}
+
+.input-container {
+  display: flex;
+}
+.input-container input {
+  height: 2rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+  line-height: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0px 0px 3px #202124;
+  margin-right: 0.5rem;
+}
+
+.input-container input:focus {
+  color: black;
+}
+
+
+.date::-webkit-datetime-edit {
+  font-size: 10px;
+}
+
+.filter {
+  display: flex;
+  height: 2rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+  line-height: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0px 0px 3px #202124;
+  margin-right: 0.5rem;
+}
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: lightgray;
+}
+.header-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+  line-height: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px #202124;
+  color: #202124;
+}
+
+.header-btn:hover {
+  background: #20212415;
+  cursor: pointer;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+}
+
+.main {
+  width: 45%;
+}
+.main h1 {
+  text-align: center;
+}
+
+.main li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.5rem;
+  box-shadow: 0px 0px 3px #202124;
+  background-color: #20212408;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.actionsContainer button {
+  height: 2rem;
+  width: 2rem;
+  margin: 4px;
+  box-shadow: 0px 0px 3px #202124;
+  border: none;
+  border-radius: 50%;
+}
+
+.actionsContainer button:hover {
+  background: #20212415;
+  cursor: pointer;
+}
+
+.actionsContainer {
+  display: flex;
+  align-items: center;
+}
+
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .input-container input {
+  font-size: 1rem;
+}
+.main li {
+  flex-direction: column;
+  height: 5.5rem;
+}
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  header {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .main li {
+    height: 7rem;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .date::-webkit-datetime-edit {
+  font-size: 8px;
+}
+.header-btn {
+  font-size: 1rem;
+  padding: .8rem;
+  line-height: 1.5rem;
+}
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .main li {
+    height: 7rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .input-container input {
+    font-size: .8rem;
+  }
+  .header-btn {
+  font-size: .8rem;
+  padding: .5rem;
+  line-height: 1.5rem;
+}
+  .date{
+    width: 100px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .main li {
+    height: 10rem;
+  }
+}
